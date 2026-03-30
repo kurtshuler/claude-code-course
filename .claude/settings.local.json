@@ -43,7 +43,10 @@
       "Bash(bun dev:*)",
       "Bash(lsof:*)",
       "Bash(kill 2773 24505)",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "mcp__codebase-memory-mcp__index_status",
+      "mcp__codebase-memory-mcp__index_repository",
+      "Bash(cp:*)"
     ]
   },
   "sandbox": {
