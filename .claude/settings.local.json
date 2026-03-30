@@ -24,7 +24,26 @@
       "mcp__plugin_playwright_playwright__browser_close",
       "Bash(bun run:*)",
       "Bash(source ~/.zshrc)",
-      "Bash(bun --version)"
+      "Bash(bun --version)",
+      "Bash(python3 -c \":*)",
+      "Bash(cp ~/.claude.json ~/.claude.json.bak)",
+      "Bash(cp /tmp/claude_json_updated.json ~/.claude.json)",
+      "Bash(claude mcp:*)",
+      "WebFetch(domain:api.anthropic.com)",
+      "WebFetch(domain:mcp-proxy.anthropic.com)",
+      "WebFetch(domain:registry.npmjs.org)",
+      "WebFetch(domain:http-intake.logs.us5.datadoghq.com)",
+      "WebFetch(domain:fonts.googleapis.com)",
+      "WebFetch(domain:fonts.gstatic.com)",
+      "Bash(curl:*)",
+      "Bash(grep -E \"\\\\.\\(ts|tsx|js|json\\)$\")",
+      "Bash(mv \".claude/agents/DocsExplorer.md\" \".claude/agents/docs-explorer.md\")",
+      "Bash(sed -i '' 's/name: DocsExplorer/name: docs-explorer/' \".claude/agents/docs-explorer.md\")",
+      "Bash(openssl rand:*)",
+      "Bash(bun dev:*)",
+      "Bash(lsof:*)",
+      "Bash(kill 2773 24505)",
+      "Bash(xargs kill:*)"
     ]
   },
   "sandbox": {
