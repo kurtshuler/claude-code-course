@@ -46,7 +46,13 @@
       "Bash(xargs kill:*)",
       "mcp__codebase-memory-mcp__index_status",
       "mcp__codebase-memory-mcp__index_repository",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(git stash:*)",
+      "Bash(git push:*)",
+      "Bash(git fetch:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   },
   "sandbox": {
