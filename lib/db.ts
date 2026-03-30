@@ -1,12 +1,16 @@
 import type { Database as DatabaseType } from "bun:sqlite";
+import { mkdirSync } from "fs";
 import path from "path";
 
-const DB_PATH = path.join(process.cwd(), "data", "app.db");
+const DB_DIR = path.join(process.cwd(), "data");
+const DB_PATH = path.join(DB_DIR, "app.db");
 
 let _db: DatabaseType | null = null;
 
 function initDb(): DatabaseType {
   if (_db) return _db;
+
+  mkdirSync(DB_DIR, { recursive: true });
 
   // Dynamic require so Next.js build (Node.js worker) doesn't fail
   // eslint-disable-next-line @typescript-eslint/no-require-imports
